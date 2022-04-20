@@ -14,7 +14,7 @@ apt -y install build-essential libx11-dev libxinerama-dev libxft-dev \
 	       mpv imagemagick
 		
 
-mkdir suckless
+git clone https://github.com/AshisChhetri/suckless.git
 
 # part 2 dwm install 
 
