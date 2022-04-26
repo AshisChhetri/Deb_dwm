@@ -9,7 +9,7 @@ if [ $? -ne 0 ]; then
 fi
 
 apt -y install build-essential libx11-dev libxinerama-dev libxft-dev \
-               git wget xinit xserver-xorg zsh x11-xserver-utils \
+               wget xinit xserver-xorg zsh x11-xserver-utils \
                fonts-font-awesome firefox-esr curl compton nitrogen \
 	       mpv imagemagick
 		
@@ -31,6 +31,9 @@ make clean
 #make clean install
 #make clean
 cd ../
+
+echo "exec dwm" >> ~/.xinitrc
+
 
 
 # chsh -s /bin/zsh $varuser
